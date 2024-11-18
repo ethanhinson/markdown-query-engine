@@ -23,8 +23,7 @@ logging.getLogger().addHandler(logging.StreamHandler(stream=sys.stdout))
 
 @app.post("/query")
 async def query_endpoint(request: QueryRequest):
-    result = query(request.query)
-    return {"response": result}
+    return query(request.query)
 
 # Keep this for local testing if needed
 if __name__ == "__main__":
