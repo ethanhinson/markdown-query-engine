@@ -1,0 +1,24 @@
+data_path: "${{data_path}}"
+eval:
+  persona: You are a senior software engineer who is an expert in Node.js.
+  question_contexts:
+    - Managing monorepos with Nx.
+    - Optimizing build times with Nx.
+    - General Nx questions
+  questions:
+    - What is the purpose of adding the "postcssConfig" option in the `apps/{your app here}/project.json` file when building an application with Nx, and how does it relate to applying configuration to libraries?
+    - How does one determine the correct configuration value (`nxConfiguration`) in the `vite.config.ts` file when using the `--configuration` flag with Nx, and what are some potential reasons why it might not work as expected?
+    - What is the primary benefit of using `--preset=node-monorepo` when creating a new Nx workspace, and how does it relate to managing monorepos?
+    - How does Nx's `create-nx-workspace@latest` command help optimize build times in a fastify-based application?
+    - In a Nx workspace, what is the purpose of the executor and generator components in the workspace plugin?
+    - How can you optimize build times for your Nx monorepo by leveraging its generators?
+    - What is the default local cache directory for the `@nx/powerpack-shared-fs-cache` plugin when using Nx?
+    - How can you configure the local cache directory in an Nx project, considering both the `cacheDirectory` option and the `NX_CACHE_DIRECTORY` environment variable?
+    - How do you specify an environment variable for interpolation in your `index.html` file when using NxAppWebpackPlugin or the withNx plugins?
+    - With the release of Nx 19, what happens to the use of predefined Nx variables like `%NX_PUBLIC_DOMAIN_NAME%` in your React applications?
+    - What is the recommended way to ensure that the versions of `@nx/express` and `nx` in an Nx workspace are in sync?
+    - How does installing `@nx/express` with a package manager differ from using the `nx add` command, especially when it comes to choosing the correct version of `@nx/express`?
+    - What is a common issue that developers may encounter while trying to run Nx on Continuous Integration (CI) environments, and how can it be resolved?
+    - How does Nx optimize build times for a monorepo setup, and what factors contribute to slower build times in such scenarios?
+    - What types of files does @nx/jest recognize as Jest configuration files for an Nx project?
+    - How does the presence of a specific file affect the creation of a task in an Nx project?
